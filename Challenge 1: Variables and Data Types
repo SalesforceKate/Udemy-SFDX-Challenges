@@ -9,3 +9,7 @@ blogPosts.put('Events in Aura Framework','Lightning');
 blogPosts.put('Developing Reusable Components','Lightning');
 
 system.debug(blogPosts);
+
+// Per solution, a better way to do this is create a map with a collection as the value:
+// Map<String, List<String>> blogPosts = new Map<String, List<String>>();
+// Create a list of Apex articles, create a list of Lightning articles, and put lists to Map with correct corresponding keys
