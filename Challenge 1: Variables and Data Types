@@ -1,0 +1,11 @@
+// Print a map of blog post titles and their categories
+// Per instructions, there is a one-to-many relationship between categories and posts.
+
+Map<String, String> blogPosts = new Map<String, String>();
+// keys = post title, values = category
+blogPosts.put('Demystifying Apex Collections','Apex');
+blogPosts.put('Datatypes and Variables in Apex','Apex');
+blogPosts.put('Events in Aura Framework','Lightning');
+blogPosts.put('Developing Reusable Components','Lightning');
+
+system.debug(blogPosts);
