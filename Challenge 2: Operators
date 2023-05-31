@@ -1,1 +1,31 @@
-// placeholder
+// 1 slice = $8 / slice
+// 2-3 slices = $7 / slice
+// >3 slices = $6 / slice
+// and
+// Ross ordered 3 slices
+// Chandler ordered 1 slice
+// Joey ordered 4 slices
+// and the total was $53; how to split the bill?
+
+// create a map of who ordered how many slices
+Map<String, Integer> whoGotWhatMap = new Map<String, Integer>();
+whoGotWhatMap.put('Ross', 3);
+whoGotWhatMap.put('Chandler', 1);
+whoGotWhatMap.put('Joey', 4);
+
+// loop over the whoGotWhatMap
+Integer subtotal;
+Integer total=0;
+for (String who : whoGotWhatMap.keySet()) {
+    Integer slices = whoGotWhatMap.get(who);
+    if (slices == 1){
+        subtotal = (slices * 8);
+    } else if (slices >= 2 && slices <=3){
+        subtotal = (slices * 7);
+    } else if (slices >3){
+        subtotal = (slices * 6);
+	}
+    system.debug(who + ' owes $' + subtotal);
+    total += subtotal;
+}
+system.debug('The total bill is $' + total);
