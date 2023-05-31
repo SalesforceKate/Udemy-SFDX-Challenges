@@ -1,10 +1,6 @@
-// 1 slice = $8 / slice
-// 2-3 slices = $7 / slice
-// >3 slices = $6 / slice
+// Prices: 1 slice = $8 / slice, 2-3 slices = $7 / slice, >3 slices = $6 / slice
 // and
-// Ross ordered 3 slices
-// Chandler ordered 1 slice
-// Joey ordered 4 slices
+// Ross ordered 3 slices, Chandler ordered 1 slice, Joey ordered 4 slices
 // and the total was $53; how to split the bill?
 
 // create a map of who ordered how many slices
