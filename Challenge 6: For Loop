@@ -1,0 +1,4 @@
+//For loop Pattern Challenge
+for (Integer i = 1; i < 6; i++) {
+    System.debug('*'.repeat(i));
+}
