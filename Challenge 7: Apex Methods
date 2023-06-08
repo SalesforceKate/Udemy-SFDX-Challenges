@@ -1,1 +1,14 @@
-// hold
+public class Fitness {
+	// calculateBMI (kg/m^2)
+    public Double calculateBMI(Double weight, Double height){
+        Double bmi = weight/Math.pow(height, 2);
+        return bmi;
+    }
+    // calculatePace (km/hr) - params are km/min
+    public Integer calculatePace(Integer distance, Integer timeInMin){
+        Integer pace = distance/(timeInMin/60);
+        return pace;
+    }
+}
+
+// Execute anonymous code to call methods above
